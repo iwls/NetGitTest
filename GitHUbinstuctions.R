@@ -6,9 +6,16 @@
   # ls = to show the list of files in a folder
   # cd and cd.. to move to the next folder or the previous one.
 # c/git clone https://github.com/<reporsitoryname>.git  
-  #(you can copy the link), to copy the repository local
+    #(you can copy the link), to copy the repository local
+    # this will pull all information in
+#d/ git status ( you have an untracket file => Github doesnt know the file exists)
+#e/ git add <Filename>.<extension>
+#f/ git commmit -m "<message body>" -- this commits the new file to github and adds a message
+    #it is still not on the github website , you still need to push it
+#g/ git push   #This will push the files from the computer to Github
 
-
+##To download it again on another computer you need to pull it 
+#h/ git pull
 data(iris)
 library(dplyr)
 head(iris)
