@@ -1,0 +1,21 @@
+#For the following case
+# split population by gender ( M/ F)
+#check if old or not old
+# Assume in one leaf = male : 6 old , 4 not old
+
+import  math  #imported for the log function
+
+def entrophy_leaf(tot , a):
+    value = a * 1.0
+    result = (value/ tot) * math.log(value/tot , 2)
+    return  result
+
+b = entrophy_leaf (100 , 99)
+c = entrophy_leaf (100 , 1)
+print (b)
+print (c)
+
+
+d = - (b + c)
+print (d)
+
