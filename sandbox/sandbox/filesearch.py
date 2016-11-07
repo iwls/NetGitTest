@@ -34,16 +34,12 @@ def all_files(lijst):
                 bestand.append(name)
             if os.path.isdir(a):
                 map.append(name)
-
-        if map[0] != '':
-            for x in os.listdir():
+        if map:
+            for x in map:
                 link = os.path.join(lijst, name)
                 print(link)
                 bestand.extend(all_files(link))
-        return bestand
-    else:
-        return "non existing path"
-
+    return bestand
 print(all_files(z))
 
 
